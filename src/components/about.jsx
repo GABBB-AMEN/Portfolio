@@ -5,6 +5,7 @@ class About extends React.Component {
   constructor() {
     super();
     this.state = {
+      skills: ["Leadership Skills", "Adaptability", "Time Management", "Communication Skills"],
       about_me: [
         {
           id: "first-p-about",
@@ -44,6 +45,14 @@ class About extends React.Component {
                           </p>
                         );
                       })}
+                      <div className="title-box-2">
+                        <h5 className="title-left">SKILLS</h5>
+                      </div>
+                      <ul className="lead">
+                        {this.state.skills.map(skill => {
+                          return <li key={skill}>{skill}</li>;
+                        })}
+                      </ul>
                     </div>
                   </div>
                 </div>
