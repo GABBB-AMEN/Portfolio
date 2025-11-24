@@ -5,7 +5,7 @@ class About extends React.Component {
   constructor() {
     super();
     this.state = {
-      skills: ["Leadership Skills", "Adaptability", "Time Management", "Communication Skills"],
+      skills: ["Python", "Java", "HTML", "CSS", "Javascript"],
       about_me: [
         {
           id: "first-p-about",
